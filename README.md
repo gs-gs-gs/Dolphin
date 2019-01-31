@@ -6,4 +6,4 @@
 **Rest API:**
 > **/jlogin<br/>** **/file/jlist/**
 
-[1]: https://www.zybuluo.com/static/img/logo.png
+[1]: https://raw.githubusercontent.com/gs-gs-gs/Dolphin/master/resources/Dolphin.png
