@@ -24,7 +24,7 @@ public class Index {
     public String Index(Model model) {
         List<FileModel> filelist = this.fd.GetFileList();
         List<String> FILE_COLUMNLIST = new ArrayList<>();
-        for (String value : Configuration.SqlColumnsList.get("file")){
+        for (String value : Configuration.SqlColumnsList.get("FILE")){
             FILE_COLUMNLIST.add(value);
         }
         model.addAttribute("filecolumn", FILE_COLUMNLIST);

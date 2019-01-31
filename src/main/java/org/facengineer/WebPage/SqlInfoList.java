@@ -27,8 +27,8 @@ public class SqlInfoList {
     public String List(Model model) {
         List<Person> personlist = this.personModel.AllPersonList();
         List<FileModel> filelist = this.fileDao.GetFileList();
-        List<String> USER_COLUMNLIST = Configuration.SqlColumnsList.get("user");
-        List<String> FILE_COLUMNLIST = Configuration.SqlColumnsList.get("file");
+        List<String> USER_COLUMNLIST = Configuration.SqlColumnsList.get("USER");
+        List<String> FILE_COLUMNLIST = Configuration.SqlColumnsList.get("FILE");
         model.addAttribute("usercolumn",USER_COLUMNLIST);
         model.addAttribute("filecolumn",FILE_COLUMNLIST);
         model.addAttribute("personlist",personlist);

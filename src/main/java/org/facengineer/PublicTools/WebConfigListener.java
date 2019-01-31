@@ -25,7 +25,7 @@ public class WebConfigListener implements ServletContextListener {
     private Map<String,List<String>> GenerateSqlColumnsList(){
         Map<String,List<String>> Result = new HashMap<>();
         for(String TableName : this.platformModel.ShowTables()){
-            Result.put(TableName,this.platformModel.DescribeTable(TableName));
+            Result.put(TableName.toUpperCase(),this.platformModel.DescribeTable(TableName));
         }
         return Result;
     }
